@@ -1,6 +1,9 @@
 
 <?php
-
+/**
+this scripts is an example to solve the "Problem A. Standing Ovation"
+https://code.google.com/codejam/contest/6224486/dashboard
+*/
 function readFileToArray($file) {
 
 	$result = array();
@@ -54,10 +57,6 @@ function calculateFriends($S, $audience) {
 
 
 function main($inputFile) {
-	//echo calculateFriends(4, '12345') . PHP_EOL;
-	//echo calculateFriends(5, '110011') . PHP_EOL;
-	//echo $argv[1];
-	
 	$a = readFileToArray($inputFile);
 
 	foreach($a as $key=>$test) {
@@ -65,6 +64,8 @@ function main($inputFile) {
 	}
 
 }
+//echo calculateFriends(4, '12345') . PHP_EOL;
+//echo calculateFriends(5, '110011') . PHP_EOL;
 
 main($argv[1]);
 ?>
